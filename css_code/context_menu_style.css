@@ -1,0 +1,31 @@
+.menu
+{
+	position: absolute;
+	display: none;
+	
+	left: 50vh;
+	
+	width: 15vh;
+	
+	border: 0.2vh white solid;
+	
+	background-color: rgb(50, 50, 50);
+	
+	font-family: Candara;
+	font-size: 1.7vh;
+	
+	z-index: 1;
+}
+.menu li
+{
+	padding: 1vh;
+	border-bottom: 0.2vh white solid;
+	
+	transition: background-color 0.1s ease-in 0s;
+	
+	cursor: pointer;
+}
+.menu li:hover
+{
+	background-color: rgb(90, 90, 90);
+}

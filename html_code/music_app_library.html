@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Музыкальное веб-приложение</title>
+		<meta charset="UTF-8">
+		
+		<link rel="stylesheet" href="../css_code/delete_styles.css">
+		<link rel="stylesheet" href="../css_code/joint_styles.css">
+		<link rel="stylesheet" href="../css_code/left_panel_styles.css">
+		<link rel="stylesheet" href="../css_code/context_menu_style.css">
+		<link rel="stylesheet" href="../css_code/temporary_styles.css">
+		<style></style>
+		<style></style>
+	</head>
+	<body>
+		<div class="left_panel">
+			<nav>
+				<a href="../html_code/music_app_favourites.html"><li>Избранное</li></a>
+				<a href="../html_code/music_app_library.html"><li>Библиотека</li></a>
+				<a href="../html_code/music_app_sort.html"><li>Отсортировать</li></a>
+			</nav>
+			
+			<section class="left_track_list">
+				<div>
+					<!-- <a><span>Старый отель</span><span>Браво</span><span></span></a> -->
+				</div>
+			</section>
+			
+			<section class="mini_player">
+				<section class="picture">
+					
+					<h1>Ничего не воспроизводится<br><span>Нет</span></h1>
+					<div></div>
+					<button class="forward"></button>
+					<button class="back"></button>
+				</section>
+				
+				<section class="description">
+					<button class="play"></button>
+					<button class="loop"></button>
+					<input type="range" value="1" max="100" min="1">
+				</section>
+			</section>
+		</div>
+		
+		<div class="main_content">
+			<section class="track_block">
+				<section class="picture">
+					<h1>And I feel you<br><span>Plenka</span></h1>
+				</section>
+				<section class="description">
+					<button class="back"></button>
+					<input type="range" min="1" value="1" max="100">
+					<button class="forward"></button>
+					
+					<button class="play"></button>
+					<button class="loop"></button>
+				</section>
+			</section>
+
+			<form class="searching"> <input placeholder="Введите название композиции" type="text" value=""> </form>
+			
+			<header class="list"></header> <!--В начале у header list, а потом title-->
+			
+			<section class="tracks">
+					<p><span>Название</span><span>Исполнитель</span><span>Альбом</span></p>
+					<div>
+					</div>
+			</section>
+		</div>
+		
+		<ul class="menu">
+			<li class="addToQueue">Добавить в очередь</li>
+			<li class="openAlbum">Открыть альбом</li>
+			<li class="openPlayer">Открыть проигрыватель</li>
+		</ul>
+		
+		<script src="../js_code/data_of_playlists.js"></script>
+		<script src="../js_code/context_menu_code.js"></script>
+		<script src="../js_code/playlists_and_albums_code.js"></script>
+	</body>
+</html>

@@ -1,0 +1,425 @@
+html
+{
+	background-color: black;
+	color: white;
+}
+li { list-style-type: none; }
+a { text-decoration: none; }
+button { cursor: pointer; }
+
+
+
+
+.main_content
+{
+	position: absolute;
+	
+	width: 85%;
+	height: 100%;
+	
+	left: 15%;
+}
+.main_content .searching 
+{
+	position: relative;
+	display: flex;
+	align-items: center;
+	
+	top: 0;
+	
+	height: 10%;
+	width: 100%;
+	
+	border-bottom: 0.2vh rgb(90, 90, 90) solid;
+}
+.main_content .searching input
+{
+	position: absolute;
+	
+	left: 15%;
+	
+	width: 30%;
+	height: 4vh;
+
+	padding: 0;
+	border: none;
+	border-radius: 0.5vh;
+	
+	background-color: rgb(50, 50, 50);
+	color: white;
+	font-size: 2vh;
+	font-family: Candara;
+	
+	cursor: text;
+}
+.main_content .searching input:focus
+{
+	outline: none;
+}
+::placeholder
+{
+	width: 100%;
+	padding-left: 0.5vh;
+	
+	color: rgb(150, 150, 150);
+}
+input:focus::placeholder
+{
+	width: 100%;
+	padding-left: 0.5vh;
+	
+	color: rgb(100, 100, 100);
+}
+::placeholder:focus
+{
+	color: rgb(100, 100, 100);
+}
+
+.main_content .list
+{
+	position: relative;
+	display: block;
+	
+	width: 100%;
+	
+	border-bottom: 0.2vh rgb(90, 90, 90) solid;
+}
+.main_content .list a
+{
+	position: relative;
+	display: inline-block;
+	
+	width: 12vw;
+	height: 15vw;
+	
+	margin: 2vh;
+	
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	
+	cursor: pointer;
+}
+.main_content .list a > span
+{
+	position: absolute;
+	
+	bottom: 0;
+	
+	width: 100%;
+	
+	font-family: Candara;
+	text-align: center;
+	
+	cursor: default;
+}
+.main_content .list a > span span:nth-of-type(2)
+{
+	color: rgb(170, 170, 170);
+}
+
+.main_content .tracks
+{
+	position: relative;
+	display: block;
+	
+	width: 100%;
+	
+	padding: 3% 0;
+	
+	font-family: Candara;
+}
+.main_content .tracks a
+{
+	position: relative;
+	display: flex;
+	align-items: center;
+	
+	width: 70vw;
+	padding: 2vh;
+	border: 0.2vh rgb(90, 90, 90) solid;
+	
+	font-size: 1.7vh;
+	
+	background-size: auto 70%;
+	background-repeat: no-repeat;
+	background-position: 1% 50%;
+	
+	transition: background-color 0.05s ease-in 0s;
+}
+.main_content .tracks a:hover
+{
+	background-color: rgb(50, 50, 50);
+	cursor: pointer;
+}
+.main_content .tracks a span
+{
+	position: absolute;
+	display: inline-block;
+}
+.main_content .tracks a span:nth-of-type(1) { left: 4%; }
+.main_content .tracks a span:nth-of-type(2) { left: 50%; }
+.main_content .tracks a span:nth-of-type(3) { right: 1%; }
+
+.main_content .tracks p
+{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	
+	top: 0;
+	
+	width: 70vw;
+	padding: 2vh;
+	border: 0.2vh rgb(90, 90, 90) solid;
+	
+	font-size: 1.7vh;
+}
+.main_content .tracks p span
+{
+	position: absolute;
+	display: inline-block;
+}
+.main_content .tracks p span:nth-of-type(1) { left: 4%; }
+.main_content .tracks p span:nth-of-type(2) { left: 50%; }
+.main_content .tracks p span:nth-of-type(3) { right: 1%; }
+
+/* ======================================= */
+/* Formating header of playlists or albums*/
+.title
+{
+	position: relative;
+	display: flex; /* changing value, default value is FLEX */
+	
+	width: 75%;
+	
+	padding: 1vw 0;
+}
+.title figure
+{
+	position: relative;
+	
+	left: 1vw;
+	width: 15vw;
+	height: 15vw;
+	
+	background-color: grey;
+	background-size: 100% 100%;
+}
+.title > section
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	left: 1vw;
+	
+	padding: 1vw;
+}
+.title > section h1
+{
+	font-size: 4vh;
+	font-family: Verdana;
+}
+.title > section p
+{
+	width: 44.8vw;
+	
+	margin: 1vh 0;
+	
+	font-size: 2vh;
+	font-family: Candara;
+	color: rgb(170, 170, 170);
+}
+.title > section button
+{
+	display: block;
+	position: relative;
+	
+	width: 15vh;
+	height: 5vh;
+	
+	border: rgb(200, 200, 200) solid 0.3vh;
+	border-radius: 1vh;
+	
+	background-color: black;
+	
+	color: rgb(170, 170, 170);
+	font-family: Candara;
+	font-size: 1.8vh;
+	font-weight: bold;
+	
+	transition: color 0.1s ease-in 0s;
+	transition: border 0.1s ease-in 0s;
+}
+.title > section button:hover
+{
+	color: white;
+	border: white solid 0.3vh;
+	cursor: pointer;
+}
+.title > section button:nth-of-type(2)
+{
+	top: -5vh;
+	left: 17vh;
+}
+.title > section button:nth-of-type(3)
+{
+	top: -10vh;
+	left: 34vh;
+
+	width: 5vh;
+	height: 5vh;
+
+	border: none;
+
+	background-image: url(../icons/exit.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+.title > section button:nth-of-type(3):hover { background-image: url(../icons/exitw.png); }
+
+.track_block
+{
+	display: none; /* changing value */
+	position: absolute;
+	
+	width: 72.2vw;
+	height: 90vh;
+	left: 0;
+	top: 10vh;
+	
+	z-index: 1;
+}
+.track_block h1
+{
+	position: absolute;
+	width: 100%;
+	
+	font-family: Verdana;
+	font-size: 3vh;
+	text-align: center;
+}
+.track_block h1 span
+{
+	font-size: 2vh;
+	color: rgb(170, 170, 170);
+}
+.track_block .picture 
+{
+	position: absolute;
+	
+	width: 100%;
+	height: 80%;
+	
+	left: 0.1vh; /* Тогда отображается граница */
+	top: 0;
+	
+	background-color: rgba(0, 0, 0, 1);
+	background-image: url(just_want_to_feel.png);
+	background-size: 30% auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.track_block .description
+{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+	width: 100%;
+	height: 20%;
+	
+	top: 80%;
+	
+	background-color: rgb(50, 50, 50);
+}
+input[value] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+input[type]
+{
+	cursor: pointer;
+}
+.track_block .description input
+{
+	width: 75%;
+	height: 5%;
+	
+	border-radius: 1vh;
+	border: solid 0.01vh rgb(150, 150, 150);
+	background-color: black;
+	
+	overflow: hidden;
+	outline: none;
+}
+.track_block .description input::-webkit-slider-thumb
+{
+	-webkit-appearance: none;
+    appearance: none;
+    width: 2vh;
+    height: 2vh;
+	border-radius: 40%;
+    background-color: rgb(230, 230, 230);
+	box-shadow: -1000vh 0 0 999vh rgb(150, 150, 150);
+    cursor: pointer;
+}
+.track_block .description button
+{
+	position: absolute;
+	
+	width: 5vh;
+	height: 5vh;
+	
+	border: rgb(170, 170, 170) solid 0.2vh;
+	
+	background-color: rgb(50, 50, 50);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.track_block .description button:hover
+{
+	cursor: pointer;
+	border-color: white;
+}
+.track_block .description .loop
+{
+	bottom: 1vh;
+	background-image: url(../icons/loop.png);
+	background-size: 60% auto;
+}
+.track_block .description .loop:hover { background-image: url(../icons/loopw.png); }
+.track_block .description .play
+{
+	top: 1vh;
+	background-image: url(../icons/play.png);
+	background-size: 60% auto;
+}
+.track_block .description .play:hover { background-image: url(../icons/playw.png); }
+.track_block .description .back
+{
+	left: 1.5vh;
+	background-image: url(../icons/back.png);
+	background-size: 60% auto;
+}
+.track_block .description .back:hover { background-image: url(../icons/backw.png); }
+.track_block .description .forward
+{
+	right: 1.5vh;
+	background-image: url(../icons/forward.png);
+	background-size: 60% auto;
+}
+.track_block .description .forward:hover { background-image: url(../icons/forwardw.png); }
+
+
+
+
+
+/* Зона для временных стилей */
+
+
+/* ========================= */

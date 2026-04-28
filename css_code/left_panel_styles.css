@@ -1,0 +1,256 @@
+.left_panel
+{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	width: 15%;
+	height: 100%;
+	
+	left: 0;
+	
+	border-right: 0.2vh rgb(90, 90, 90) solid;
+	
+	font-size: 2vh;
+	font-family: Candara;
+}
+.left_panel nav
+{
+	display: block;
+	position: relative;
+	top: 5vh;
+	
+	width: 80%;
+	height: 12%;
+	
+	padding: 3%;
+	
+	border: 0.2vh rgb(90, 90, 90) solid;
+}
+.left_panel nav li {
+	display: block;
+	
+	padding-top: 3%;
+	padding-bottom: 3%;
+	
+	list-style-type: none;
+	
+	color: rgb(170, 170, 170);
+	
+	transition: color 0.05s ease-in 0s;
+}
+.left_panel nav li:hover
+{
+	color: white;
+	cursor: pointer;
+}
+
+
+.left_panel .left_track_list
+{
+	position: relative;
+	
+	overflow: auto;
+	
+	width: 80%;
+	height: 45%;
+	
+	padding: 3%;
+	
+	border: rgb(90, 90, 90) solid 0.2vh;
+	
+	top: 7vh;
+}
+.left_panel .left_track_list a
+{
+	display: block; /* changing value */
+	
+	padding: 0.5vh;
+	border: 0.2vh rgb(90, 90, 90) solid;
+	border-radius: 0.5vh;
+	
+	font-size: 1.7vh;
+	text-align: right;
+	
+	background-image: url(../music/pictures/revolver.png);
+	background-size: auto 70%;
+	background-repeat: no-repeat;
+	background-position: 4% 50%;
+	
+	transition: background-color 0.05s ease-in 0s;
+}
+.left_panel .left_track_list a:hover
+{
+	background-color: rgb(50, 50, 50);
+	cursor: pointer;
+}
+.left_panel .left_track_list a span:nth-of-type(2)
+{
+	display: block;
+	font-size: 1.2vh;
+	color: rgb(170, 170, 170);
+}
+.left_panel .left_track_list a span:nth-of-type(3) { display: none; }
+
+.left_panel .left_track_list::-webkit-scrollbar
+{
+	background-color: black;
+	width: 1vh;
+	/*box-shadow: inset 0.1vh 0.1vh 0 0 rgb(50, 126, 150);*/
+}
+.left_panel .left_track_list::-webkit-scrollbar-thumb { background-color: rgb(90, 90, 90); }
+.left_panel .left_track_list::-webkit-scrollbar-thumb:hover { background-color: rgb(170, 170, 170); }
+
+.left_panel .mini_player
+{
+	position: absolute;
+	
+	width: 86%;
+	height: 30%;
+	
+	bottom: 0;
+	
+	border: rgb(90, 90, 90) solid 0.2vh;
+}
+.left_panel .mini_player .picture
+{
+	display: flex;
+	justify-content: center;
+
+	width: 100%;
+	height: 75%;
+	
+	background-color: black;
+	/*background-image: url();*/  /* changing value, default is no URL */
+	background-position: center 70%;
+	background-repeat: no-repeat;
+	background-size: 50% auto;
+}
+.left_panel .mini_player .picture div
+{
+	position: absolute;
+
+	width: 14vh;
+	height: 14vh;
+
+	top: 5.5vh;
+
+	background-image: url(); /* changing value, default is no URL */
+	background-color: black;
+	background-size: 100% auto;
+
+	opacity: 1;
+}
+.left_panel .mini_player .picture button
+{
+	position: absolute;
+	top: 40%;
+
+	width: 3vh;
+	height: 3vh;
+
+	border: none;
+
+	background-size: 100% auto;
+	background-color: black;
+}
+.left_panel .mini_player .picture .forward { right: 0.5vh; background-image: url(../icons/forward.png); }
+.left_panel .mini_player .picture .forward:hover { background-image: url(../icons/forwardw.png); }
+.left_panel .mini_player .picture .back { left: 0.5vh; background-image: url(../icons/back.png); }
+.left_panel .mini_player .picture .back:hover { background-image: url(../icons/backw.png); }
+.left_panel .mini_player .picture h1
+{
+	position: relative;
+
+	width: 100%;
+	
+	padding-top: 1vh;
+	
+	font-size: 1.5vh;
+	text-align: center;
+}
+.left_panel .mini_player .picture h1 span
+{
+	color: rgb(170, 170, 170);
+}
+.left_panel .mini_player .description
+{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	width: 100%;
+	height: 25%;
+	
+	background-color: rgb(50, 50, 50);
+}
+.left_panel .mini_player .description input
+{
+	height: 5%;
+	width: 65%;
+	
+	border-radius: 1vh;
+	border: solid 0.01vh rgb(150, 150, 150);
+	background-color: black;
+	
+	overflow: hidden;
+	outline: none;
+}
+.left_panel .mini_player .description input::-webkit-slider-thumb
+{
+	-webkit-appearance: none;
+    appearance: none;
+    width: 1vh;
+    height: 1vh;
+	border-radius: 40%;
+    background-color: rgb(230, 230, 230);
+	box-shadow: -1000vh 0 0 999vh rgb(150, 150, 150);
+    cursor: pointer;
+}
+.left_panel .mini_player .description button
+{
+	/*position:  absolute;*/
+	
+	margin: 0 0.5vh;
+
+	width: 3vh;
+	height: 3vh;
+	
+	border: rgb(170, 170, 170) solid 0.2vh;
+	background-color: rgb(50, 50, 50);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.left_panel .mini_player .description button:hover
+{
+	cursor: pointer;
+	border-color: white;
+}
+.left_panel .mini_player .description .play
+{
+	/*top: 0.5vh;*/
+	background-image: url(../icons/pause.png);
+	background-size: 60% auto;
+}
+.left_panel .mini_player .play:hover { background-image: url(../icons/pausew.png); }
+.left_panel .mini_player .description .loop
+{
+	/*bottom: 0.5vh;*/
+	background-image: url(../icons/loop.png);
+	background-size: 60% auto;
+}
+.left_panel .mini_player .loop:hover { background-image: url(../icons/loopw.png); }
+.left_panel .mini_player .description .back
+{
+	left: 0.5vh;
+	background-image: url(../icons/back.png);
+	background-size: 60% auto;
+}
+.left_panel .mini_player .description .forward
+{
+	right: 0.5vh;
+	background-image: url(../icons/forward.png);
+	background-size: 60% auto;
+}
